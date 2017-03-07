@@ -8,5 +8,7 @@
     <body>
         <h1>Endangered Animals List</h1>
         <a href="read">View All Endangered Animal</a>
+        <br>
+        <a href="http://s17-msci3300-18.azurewebsites.net/">Return to Main Page</a> 
     </body>
 </html>

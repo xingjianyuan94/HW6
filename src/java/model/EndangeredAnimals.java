@@ -70,11 +70,11 @@ public class EndangeredAnimals{
     }
     
      public String getHABITAT() {
-        return LOCATION;
+        return HABITAT;
     }
 
     public void setHABITAT(String HABITAT) {
-        this.LOCATION = LOCATION;
+        this.HABITAT = HABITAT;
     }
 
     @Override
