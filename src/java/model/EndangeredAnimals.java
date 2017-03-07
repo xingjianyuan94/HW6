@@ -1,5 +1,9 @@
+    package model; 
+    
+public class EndangeredAnimals{
+    
     private int ANIMALID;
-    private String ANIMALName;
+    private String ANIMALNAME;
     private String SCIENTIFICNAME;
     private String STATUS;
     private String LOCATION;
@@ -49,7 +53,7 @@
         this.SCIENTIFICNAME = SCIENTIFICNAME;
     }
 
-    public getSTATUS() {
+    public String getSTATUS() {
         return STATUS;
     }
 
@@ -64,11 +68,21 @@
     public void setLOCATION(String LOCATION) {
         this.LOCATION = LOCATION;
     }
+    
+     public String getHABITAT() {
+        return LOCATION;
+    }
+
+    public void setHABITAT(String HABITAT) {
+        this.LOCATION = LOCATION;
+    }
 
     @Override
     public String toString() {
         return "EndangeredAnimals{" + "ANIMALID=" + ANIMALID + ", ANIMALNAME=" + ANIMALNAME + ", SCIENTIFICNAME=" + SCIENTIFICNAME + ", STATUS=" + STATUS + ", LOCATION=" + LOCATION + ", HABITAT=" + HABITAT + '}';
     }
+
+    
 
   
     
