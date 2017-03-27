@@ -5,13 +5,16 @@
  */
 package controller;
 
+import dbHelpers.AddQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.EndangeredAnimals;
 
 /**
  *
@@ -77,14 +80,33 @@ public class AddServlet extends HttpServlet {
             throws ServletException, IOException {
         
         //get the data
+        String animalname = request.getParameter("animalname");
+        String scientificname = request.getParameter("scientificname");
+        String status = request.getParameter("status");
+        String location = request.getParameter("location");
+        String habitat = request.getParameter("habitat");
         
         //set up a animal object
+        EndangeredAnimals animal = new EndangeredAnimals();
+        animal.setANIMALNAME(animalname);
+        animal.setSCIENTIFICNAME(scientificname);
+        animal.setSTATUS(status);
+        animal.setLOCATION(location);
+        animal.setHABITAT(habitat);
+        
         
         //set up an addQuery object
+        AddQuery aq = new AddQuery();
+        
         
         //pass the animal to addQuery to add to the databass
+        aq.doAdd(animal);
         
         //pass execution control to the ReadServlet
+        String url = "/read";
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+        dispatcher.forward (request, response);
     }
 
     /**
