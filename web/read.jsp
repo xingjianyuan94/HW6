@@ -11,6 +11,10 @@
     <body>
         <h1>Endangered Animals</h1>
         <%= table %>
+        <br><br>
+        
+        <a href ="add">Add A Endangered Animal</a>
+        <br><br>
         <a href="index.jsp">Return to the previous page</a>
     </body>
 </html>
