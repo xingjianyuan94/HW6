@@ -63,12 +63,15 @@ public class ReadQuery {
    
    public String getHTMLTable(){
    
+                
    String table = "";
-   table += "<table border=1>";
+   
+   
+  table += "<table>";
    
    
  
-   table += "<thead>";
+  
    table += "<tr>";
    table += "<th>AnimalID</th>";
    table += "<th>AnimalName</th>";
@@ -78,7 +81,7 @@ public class ReadQuery {
    table += "<th>Habitat</th>";
    table += "<th>Update/ Delete</th>";
    table += "</tr>";
-   table += "</thead>";
+
    
    
    
