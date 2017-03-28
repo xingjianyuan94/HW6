@@ -76,6 +76,7 @@ public class ReadQuery {
    table += "<th>Status</th>";
    table += "<th>Location</th>";
    table += "<th>Habitat</th>";
+   table += "<th>Update/ Delete</th>";
    table += "</tr>";
    table += "</thead>";
    
@@ -116,6 +117,10 @@ public class ReadQuery {
                     
                     table += "<td>";
                     table += animal.getHABITAT();
+                    table += "</td>";
+                    
+                    table += "<td>";
+                    table += "<a href=delete?ANIMALID=" + animal.getANIMALID() + ">Delete </a>";
                     table += "</td>";
                     
                     table += "</tr>";

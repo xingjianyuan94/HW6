@@ -14,30 +14,29 @@ import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import model.EndangeredAnimals;
 
 /**
  *
  * @author xingjianyuan
  */
-public class AddQuery {
+public class DeleteQuery {
+    
     
     private Connection conn;
     
-    public AddQuery(){
+    public DeleteQuery(){
         
-        
-    Properties props = new Properties();
-    InputStream instr = getClass().getResourceAsStream("dbConn.properties");
+        Properties props = new Properties();
+   InputStream instr = getClass().getResourceAsStream("dbConn.properties");
             try {
                 props.load(instr);
             } catch (IOException ex) {
-                Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
             }
             try {
                 instr.close();
             } catch (IOException ex) {
-                Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
             }
    
    String driver = props.getProperty("driver.name");
@@ -47,33 +46,31 @@ public class AddQuery {
             try {
                 Class.forName(driver);
             } catch (ClassNotFoundException ex) {
-                Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
             }
             try {
                 conn = DriverManager.getConnection(url,username, passwd);
             } catch (SQLException ex) {
-                Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
             }
+        
     }
     
-    public void doAdd(EndangeredAnimals animal){
+    public void doDelete(int ANIMALID){
         
         try {
-            String query = "INSERT INTO ENDANGEREDANIMALS (ANIMALNAME, SCIENTIFICNAME, STATUS, LOCATION, HABITAT) VALUES (?, ?, ?, ?, ?)";
+            //set up a string to hold our query
+            String query = "DELETE FROM ENDANGEREDANIMALS WHERE ANIMALID = ?";
             
+            //create a preparedstatement using our query string
             PreparedStatement ps = conn.prepareStatement(query);
+            //fill in the preparedstatement
+            ps.setInt(1, ANIMALID);
             
-            ps.setString(1, animal.getANIMALNAME());
-            ps.setString(2, animal.getSCIENTIFICNAME());
-            ps.setString(3, animal.getSTATUS());
-            ps.setString(4, animal.getLOCATION());
-            ps.setString(5, animal.getHABITAT());
-            
+            //execute the query
             ps.executeUpdate();
-            
         } catch (SQLException ex) {
-            Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
 }

@@ -9,15 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Add A Endangered Animal</title>
+        <title>Add An Endangered Animal</title>
     </head>
     <body>
-        <h1>Add A Endangered Animal</h1>
+        <h1>Add An Endangered Animal</h1>
         
         <form name="addForm" action="addAnimal" method="get">
             
             <lable>Animal Name:</lable>
-            <input type="text" name="animalname" vaule=""/>
+            <input type="text" name="animalname" vaule="" />
             <br>
             
             <lable>Scientific Name:</lable>
