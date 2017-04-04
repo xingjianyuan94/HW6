@@ -1,9 +1,3 @@
-<%-- 
-    Document   : add
-    Created on : Mar 26, 2017, 10:22:58 PM
-    Author     : xingjianyuan
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,31 +11,39 @@
         
         <form name="addForm" action="addAnimal" method="get">
             
-            <lable>Animal Name:</lable>
-            <br>
-            <input type="text" name="animalname" vaule="" />
-            <br>
+            <table class="update">
+                
+                
             
-            <lable>Scientific Name:</lable>
-            <br>
-            <input type="text" name="scientificname" vaule=""/>
-            <br>
+                <tr>
+                <td class="right">Animal Name:</td>
+                <td><input type="text" name="animalname" vaule="" /></td>
+                </tr>
             
-            <lable>Status:</lable>
-            <br>
-            <input type="text" name="status" vaule=""/>
-            <br>
+                <tr>
+                <td class="right">Scientific Name:</td>
+                <td><input type="text" name="scientificname" vaule=""/></td>
+                </tr>
+                
+                <tr>
+                <td class="right">Status:</td>
+                <td><input type="text" name="status" vaule=""/></td>
+                </tr>
             
-            <lable>Location:</lable>
+                <tr>
+                <td class="right">Location:</td>
+                <td><input type="text" name="location" vaule=""/></td>
+                </tr>
+                
+                <tr>
+                <td class="right">Habitat:</td>
+                <td><input type="text" name="habitat" vaule=""/></td>
+                </tr>
+                
+            </table>
             <br>
-            <input type="text" name="location" vaule=""/>
             <br>
-            
-            <lable>Habitat:</lable>
-            <br>
-            <input type="text" name="habitat" vaule=""/>
-            <br>
-            <br>
+            <input type="reset" name="reset" value="Clear"/>
             <input type="submit" name="submit" vaule="Submit"/>
             
         </form>

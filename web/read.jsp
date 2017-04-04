@@ -19,6 +19,8 @@
         <br><br>
         
         <a href ="add">Add A Endangered Animal</a>
+           <br><br>
+        <a href="search.jsp">Search Animals</a>
         <br><br>
         <a href="index.jsp">Return to the previous page</a>
     </body>
