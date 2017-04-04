@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>Add An Endangered Animal</h1>
-        
+        <div align="center">
         <form name="addForm" action="addAnimal" method="get">
             
             <table class="update">
@@ -47,7 +47,7 @@
             <input type="submit" name="submit" vaule="Submit"/>
             
         </form>
-        
+        </div>
          
     </body>
 </html>

@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Search Animals</h1>
-        
+        <div align="center">
         <form name="searchForm" action="search" method="get">
             
             <input type="text" name="searchVal" value=""/>
@@ -18,5 +18,6 @@
             
             <input type="submit" name="submit" value="Search"/>
         </form>
+        </div>
     </body>
 </html>

@@ -49,9 +49,10 @@ public class ReadQuery {
    }
    
    public void doRead(){
-   
+        
+        
             try {
-                String query = "Select * from ENDANGEREDANIMALS";
+                String query = "SELECT * FROM ENDANGEREDANIMALS ORDER BY ANIMALID ASC";
                 
                 PreparedStatement ps = conn.prepareStatement(query);
                 this.results = ps.executeQuery();
