@@ -19,32 +19,32 @@
                 
                 <tr>
                     <td class="right">Animal ID:</td>
-                    <td><input type="text" name="animalid" vaule="<%= animal.getANIMALID() %>"  readonly /></td>
+                    <td><input type="text" name="animalid" value="<%= animal.getANIMALID() %>"  readonly /></td>
                 </tr>
             
                 <tr>
                 <td class="right">Animal Name:</td>
-                <td><input type="text" name="animalname" vaule="<%= animal.getANIMALNAME() %>" /></td>
+                <td><input type="text" name="animalname" value="<%= animal.getANIMALNAME() %>" /></td>
                 </tr>
             
                 <tr>
                 <td class="right">Scientific Name:</td>
-                <td><input type="text" name="scientificname" vaule="<%= animal.getSCIENTIFICNAME() %>"/></td>
+                <td><input type="text" name="scientificname" value="<%= animal.getSCIENTIFICNAME() %>"/></td>
                 </tr>
                 
                 <tr>
                 <td class="right">Status:</td>
-                <td><input type="text" name="status" vaule="<%= animal.getSTATUS() %>"/></td>
+                <td><input type="text" name="status" value="<%= animal.getSTATUS() %>"/></td>
                 </tr>
             
                 <tr>
                 <td class="right">Location:</td>
-                <td><input type="text" name="location" vaule="<%= animal.getLOCATION() %>"/></td>
+                <td><input type="text" name="location" value="<%= animal.getLOCATION() %>"/></td>
                 </tr>
                 
                 <tr>
                 <td class="right">Habitat:</td>
-                <td><input type="text" name="habitat" vaule="<%= animal.getHABITAT() %>"/></td>
+                <td><input type="text" name="habitat" value="<%= animal.getHABITAT() %>"/></td>
                 </tr>
                 
             </table>
@@ -52,7 +52,7 @@
             <br>
             <br>
             <input type="reset" name="reset" value="Clear"/>
-            <input type="submit" name="submit" vaule="Update"/>
+            <input type="submit" name="submit" value="Update"/>
             
         </form>
         </div>

@@ -17,34 +17,34 @@
             
                 <tr>
                 <td class="right">Animal Name:</td>
-                <td><input type="text" name="animalname" vaule="" /></td>
+                <td><input type="text" name="animalname" value="" /></td>
                 </tr>
             
                 <tr>
                 <td class="right">Scientific Name:</td>
-                <td><input type="text" name="scientificname" vaule=""/></td>
+                <td><input type="text" name="scientificname" value=""/></td>
                 </tr>
                 
                 <tr>
                 <td class="right">Status:</td>
-                <td><input type="text" name="status" vaule=""/></td>
+                <td><input type="text" name="status" value=""/></td>
                 </tr>
             
                 <tr>
                 <td class="right">Location:</td>
-                <td><input type="text" name="location" vaule=""/></td>
+                <td><input type="text" name="location" value=""/></td>
                 </tr>
                 
                 <tr>
                 <td class="right">Habitat:</td>
-                <td><input type="text" name="habitat" vaule=""/></td>
+                <td><input type="text" name="habitat" value=""/></td>
                 </tr>
                 
             </table>
             <br>
             <br>
             <input type="reset" name="reset" value="Clear"/>
-            <input type="submit" name="submit" vaule="Submit"/>
+            <input type="submit" name="submit" value="Submit"/>
             
         </form>
         </div>

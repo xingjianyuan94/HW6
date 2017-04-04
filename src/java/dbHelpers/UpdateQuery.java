@@ -61,6 +61,7 @@ public class UpdateQuery {
             ps.setString(3, animal.getSTATUS());
             ps.setString(4, animal.getLOCATION());
             ps.setString(5, animal.getHABITAT());
+            ps.setInt(6, animal.getANIMALID());
             
             ps.executeUpdate();
         } catch (SQLException ex) {

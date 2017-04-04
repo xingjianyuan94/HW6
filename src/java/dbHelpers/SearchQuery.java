@@ -92,6 +92,12 @@ public class SearchQuery {
    
    
             try {
+                if(!this.results.isBeforeFirst()){
+                table += "<tr>";
+                table += "<ta colspan'6'>Sorry, this game does not exist in the database</td>";
+                table += "</tr>";
+                }
+                else
                 while(this.results.next()){
                     
                     EndangeredAnimals animal = new EndangeredAnimals();
@@ -142,10 +148,10 @@ public class SearchQuery {
    table += "</table>";
   
         return table;
-   
+            
    
    
    }
-    
+      
       
 }
