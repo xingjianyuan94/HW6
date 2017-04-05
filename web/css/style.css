@@ -48,6 +48,7 @@ input[type=reset]{
     
     width:20%;
 }
+h2{text-align: center;}
 
 .update td{border: none; height:25px; padding:10px; font-weight:bold;}
 
@@ -55,15 +56,15 @@ input[type=reset]{
 
 input[readonly]{background-color: gray;}
 
-.wrap{text-align:center; width:90%; margin:0 auto; border: 2px solid black; margin-top:25px;}
+.wrap{background-color:lightgrey; text-align:center; width:90%; margin:0 auto; border: 2px solid black; margin-top:25px;}
 
-.header{background-color:tan; text-align:left; padding:25px;}
+.header{ text-align:left; padding:25px;}
 .headerImg{float:left; width:210px;}
 .headerText{float:left; height:100px; padding-top:30px; padding-left:25px;}
 
-.main{text-align:left; padding:25px;text-align: center;}
+.main{ padding:25px;text-align: center;}
 
-.footer{ text-align:left; padding:25px;}
+.footer{ text-align:center; padding:25px;}
 
 /*http://css.maxdesign.com.au/listamatic/horizontal03.htm*/
 .navcontainer { margin-left: 30px; text-align:left;}

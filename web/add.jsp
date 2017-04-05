@@ -2,12 +2,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add An Endangered Animal</title>
     </head>
     <body>
-        <h1>Add An Endangered Animal</h1>
+         <div class="wrap"> <!--div to hold all other divs -->
+            
+        <%@ include file="includes/header.jsp" %>
+        
+        <hr>
+        <%@ include file="includes/menu.jsp" %>
+        <hr>
+        
+        <div class="main"> <!--main div -->
+            
+        <h2>Add An Endangered Animal</h2>
         <div align="center">
         <form name="addForm" action="addAnimal" method="get">
             
@@ -49,5 +59,10 @@
         </form>
         </div>
          
+         </div> <!-- close main div -->
+        
+        <hr>
+        <%@ include file="includes/footer.jsp" %>
+        
     </body>
 </html>
