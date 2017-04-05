@@ -7,12 +7,43 @@
         <title>Endangered Animals</title>
     </head>
     <body>
-        <h1>Endangered Animals List</h1>
-        <a href="read">View All Endangered Animal</a>
-        <br><br>
+        <div class="wrap"> <!--div to hold all other divs -->
+            
+            <div class="header"> <!--header div -->
+		<div class="headerImg"> <!--header img div -->
+		<img src="animalLogo.jpg" height = "150px" />
+		</div> <!--close header div -->
+		
+		<div class="headerText"> <!--header text div -->
+		<h1>Endangered Animals App</h1>
+		</div> <!--close header div -->
+		
+		<br clear="all">
+	</div> <!--close header div -->
         
-        <a href="search.jsp">Search Animals</a>
-        <br><br>
-        <a href="http://s17-msci3300-18.azurewebsites.net/">Return to Main Page</a> 
+        
+        
+        <div class="navcontainer"> <!-- menu div -->
+		<ul class="navlist">
+		<li class="active"><a href="index.jsp" id="current">Homepage</a></li>
+		<li><a href="add.jsp">Add An Animal</a></li>
+		<li><a href="search.jsp">Search An Animal</a></li>
+		<li><a href="read">List All Animals</a></li>
+		</ul>
+	</div>
+        
+        <div class="main"> <!--main div -->
+        <p>Welcome to the database of current endangered animals, feel free to edit the list!</p>
+	
+	
+	</div> <!-- close main div -->
+        
+        <div class="footer"> <!--footer div -->
+	&copy; Copyright 2017 SoftwareDesignAndDevelopment.com | All rights reserved | <a href="site.map.jsp">Site Map</a>
+	
+	</div> <!--close footer div -->
+
+        
+        </div> <!-- wrap div end-->
     </body>
 </html>
