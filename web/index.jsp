@@ -32,11 +32,15 @@
 		</ul>
 	</div>
         
+        <hr>
+        
         <div class="main"> <!--main div -->
         <p>Welcome to the database of current endangered animals, feel free to edit the list!</p>
 	
 	
 	</div> <!-- close main div -->
+        
+        <hr>
         
         <div class="footer"> <!--footer div -->
 	&copy; Copyright 2017 SoftwareDesignAndDevelopment.com | All rights reserved | <a href="site.map.jsp">Site Map</a>

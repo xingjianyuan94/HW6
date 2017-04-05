@@ -61,9 +61,9 @@ input[readonly]{background-color: gray;}
 .headerImg{float:left; width:210px;}
 .headerText{float:left; height:100px; padding-top:30px; padding-left:25px;}
 
-.main{text-align:left; padding:25px;}
+.main{text-align:left; padding:25px;text-align: center;}
 
-.footer{background-color:green; text-align:left; padding:25px;}
+.footer{ text-align:left; padding:25px;}
 
 /*http://css.maxdesign.com.au/listamatic/horizontal03.htm*/
 .navcontainer { margin-left: 30px; text-align:left;}
